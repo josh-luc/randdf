@@ -1,0 +1,14 @@
+import sys
+import numpy as np
+import pandas as pd
+
+def main(a, b):
+    np.random.seed(56)
+    
+    df = pd.DataFrame(
+    np.random.randint(0, 100, size = (int(sys.argv[1]), int(sys.argv[2]))))
+    
+    print(df)
+    
+    
+main(sys.argv[1], sys.argv[2])
